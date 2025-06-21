@@ -79,7 +79,7 @@ application = Application.builder().token(BOT_TOKEN).build()
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     buttons = [[InlineKeyboardButton("💎 Buy Premium", callback_data="buy_premium")]]
     await update.message.reply_text(
-        "👋 Welcome! Send me a Diskwala link to get the video.\n\nFree users = 1 video / 24 hours.\nPremium = unlimited access!"
+        "👋 Welcome! Send me a Diskwala link to get the video.\n\nFree users = 1 video / 24 hours.\nPremium = unlimited access!",
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
