@@ -98,10 +98,9 @@ async def handle_link(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if not allowed:
         await update.message.reply_text(
-            "⚠️ Free users can only convert 1 video every 24 hours.
+    "⚠️ Free users can only convert 1 video every 24 hours.\n\nUpgrade to premium for unlimited access.",
+    reply_markup=InlineKeyboardMarkup(
 
-Upgrade to premium for unlimited access.",
-            reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("💎 Buy Premium", callback_data="buy_premium")]]
             )
         )
