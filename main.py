@@ -139,21 +139,12 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await query.message.reply_photo(
             photo=InputFile(QR_IMAGE_PATH),
             caption=(
-                "💎 *Premium Plans:*
-
-"
-                "• 7 Days = ₹29
-"
-                "• 30 Days = ₹79
-"
-                "• Lifetime = ₹149
-
-"
-                f"📲 Pay via UPI: `{UPI_ID}`
-"
-                "After payment, send screenshot to admin to activate premium.
-
-"
+                "💎 *Premium Plans:*"
+                "• 7 Days = ₹29"
+                "• 30 Days = ₹79"
+                "• Lifetime = ₹149"
+                f"📲 Pay via UPI: `{UPI_ID}`"
+                "After payment, send screenshot to admin to activate premium."
                 "👨‍💼 @YourAdminUsername"
             ),
             parse_mode="Markdown"
